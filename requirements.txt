@@ -3,4 +3,4 @@ numpy==1.21.6
 pandas==1.1.5
 scikit-learn==1.0.2
 seaborn==0.12.2
-
+xgboot==2.0.2
