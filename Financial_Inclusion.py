@@ -63,16 +63,16 @@ sel_cols = ['country', 'year', 'location_type', 'cellphone_access',
        'relationship_with_head', 'marital_status', 'education_level', 'job_type']
 x = df[sel_cols]
 
-# - Using XGBOOST to find feature importance
-x = df.drop('bank_account', axis = 1)
-y = df.bank_account 
+# # - Using XGBOOST to find feature importance
+# x = df.drop('bank_account', axis = 1)
+# y = df.bank_account 
 
-import xgboost as xgb
-model = xgb.XGBClassifier()
-model.fit(x, y)
+# import xgboost as xgb
+# model = xgb.XGBClassifier()
+# model.fit(x, y)
 
-# Print feature importance scores
-xgb.plot_importance(model)
+# # Print feature importance scores
+# xgb.plot_importance(model)
 
 sns.set(style = 'darkgrid')
 sns.countplot(x = y)
