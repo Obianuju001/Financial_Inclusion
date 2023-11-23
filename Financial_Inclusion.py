@@ -74,8 +74,8 @@ x = df[sel_cols]
 # # Print feature importance scores
 # xgb.plot_importance(model)
 
-sns.set(style = 'darkgrid')
-sns.countplot(x = y)
+# sns.set(style = 'darkgrid')
+# sns.countplot(x = y)
 
 # # UnderSampling The Majority Class
 # class1 = df.loc[df['bank_account'] == 1]    # ................................... select bank_account that is only 1
